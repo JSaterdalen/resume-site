@@ -1,0 +1,50 @@
+# Jobs
+# Salesforce Administrator
+- company: Bethel University
+  position: Salesforce Administrator
+  duration: April 2018 &ndash; Present
+  summary: >
+    <ul class="resume-item-list">
+    <li>Problem-solve complex business needs and adapt them into usable Salesforce enhancements.</li>
+    <li>Architect object data structure for efficiency and long-term growth.</li>
+    <li>Build and maintain permissions for 200+ end users across 7 different business units.</li>
+    <li>Provide training to end users on Salesforce business processes.</li>
+    </ul>
+    <span>Key accomplishments:</span>
+    <ul class="resume-item-list">
+    <li>Implemented transition to Lightning UI, including feature migration and creation of new Lightning-specific business process enhancements.</li>
+    <li>Migrated Bethel’s vendor managed Salesforce org into an in-house, vanilla Salesforce org.
+    <ul class='resume-item-list'><li>This 9-month project involved coordination with our data team, along with business management teams, to move millions of records, automations, permissions and more into a brand new org.</li></ul>
+    </li>
+
+# App Specialist
+- company: Bethel University
+  position: Application Integration Specialist
+  duration: Oct. 2015 &ndash; April 2018
+  summary: >
+    <ul class="resume-item-list">
+    <li>Maintained Linux and Windows Server web applications.</li>
+    <li>Collaborated with other IT teams to integrate applications with Bethel's databases, internal-websites, and other web-servers.</li>
+    <li>Communicated with vendors to join hardware integrations and managed cloud services with internal Bethel processes.</li>
+    <li>Curated online documentation to guide end users in the use of Bethel services</li>
+    </ul>
+
+# TUSA
+- company: Medtronic
+  position: Technical User Support Specialist
+  duration: Dec. 2014 &ndash; Oct. 2015
+  summary: >
+    <ul class="resume-item-list">
+    <li>Supported internal users via phone, email, and chat regarding internal IT services.</li>
+    <li>Troubleshot client issues related to Medtronic hardware and software.</li>
+    <li>Trained employees on best use practices for using IT services.</li>
+
+# Musician
+- company: Eagle Brook Church
+  position: Musician – Contract
+  duration: July 2015 &ndash; Present
+  summary: >
+    <ul class="resume-item-list">
+    <li>Supported internal users via phone, email, and chat regarding internal IT services.</li>
+    <li>Troubleshot client issues related to Medtronic hardware and software.</li>
+    <li>Trained employees on best use practices for using IT services.</li>
