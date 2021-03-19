@@ -44,18 +44,26 @@ layout: resume
       </header>
 
       {% for job in site.data.experience %}
-      <div
-        class="resume-item"
-        itemscope
-        itemprop="worksFor"
-        itemtype="http://schema.org/Organization"
-      >
+        <div
+          class="resume-item"
+          itemscope
+          itemprop="worksFor"
+          itemtype="http://schema.org/Organization"
+        >
         <h3 class="resume-item-title" itemprop="name">{{ job.position }}</h3>
         <h4 class="resume-item-details" itemprop="description">
           {{ job.company }}
         </h4>
         <h5 class="resume-item-details">{{ job.duration }}</h5>
-        <p class="resume-item-copy">{{ job.summary }}</p>
+        <!-- <p class="resume-item-copy">{{ job.summary }}</p> -->
+        <p>
+          <!-- <ul class="resume-item-list"> -->
+          {% for summary in job.summaries %}
+            {% if forloop.first %}<ul class="resume-item-list">{% endif %}
+            <li>{{ summary.bullet }}</li>
+            {% if forloop.last %}</ul>{% endif %}
+          {% endfor %}
+        </p>
       </div>
       <!-- end of resume-item -->
       {% endfor %}

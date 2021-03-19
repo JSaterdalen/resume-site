@@ -10,8 +10,11 @@
   "settings": {
     "files.exclude": {
       "_site": true,
-      ".jekyll-cache": true
+      ".jekyll-cache": true,
+      ".jekyll-metadata": true,
+      ".sass-cache": true
     },
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "liveServer.settings.multiRootWorkspaceName": "site"
   }
 }
