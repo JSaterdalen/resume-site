@@ -1,7 +1,7 @@
 # site settings
 url: 'https://saterdalen.me' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: '' # the subpath of your site, e.g. /blog
-title: 'Josh Saterdalen' # the name of your site, e.g. ACME Corp.
+title: 'Josh Saterdalen | Resume' # the name of your site, e.g. ACME Corp.
 
 # Build settings
 markdown: kramdown
@@ -15,7 +15,7 @@ resume_name: 'Josh Saterdalen'
 resume_title: 'Salesforce Administrator'
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email: 'josh@saterdalen.me'
+resume_contact_email: 'josh+resume@saterdalen.me'
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone: ''
@@ -23,9 +23,6 @@ resume_contact_address: ''
 
 resume_header_contact_info: ''
 display_header_contact_info: 'false'
-
-resume_header_intro: >
-  <p>I do Salesforce. <br> Whatever.</p>
 
 # use "yes" to display the email contact button,
 # "no" to display an "I'm not looking for work" message,
