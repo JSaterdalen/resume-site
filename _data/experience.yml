@@ -8,13 +8,11 @@
     - bullet: Architect object data structure for efficiency and long-term growth.
     - bullet: Build and maintain permissions for 200+ end users across 7 different business units.
     - bullet: Provide training to end users on Salesforce business processes.
-
-#     <span>Key accomplishments:</span>
-#     <ul class="resume-item-list">
-#     <li>Implemented transition to Lightning UI, including feature migration and creation of new Lightning-specific business process enhancements.</li>
-#     <li>Migrated Bethel’s vendor managed Salesforce org into an in-house, vanilla Salesforce org.
-#     <ul class='resume-item-list'><li>This 9-month project involved coordination with our data team, along with business management teams, to move millions of records, automations, permissions and more into a brand new org.</li></ul>
-#     </li>
+  accomplishments:
+    - bullet: Implemented transition to Lightning UI, including feature migration and creation of new Lightning-specific business process enhancements.
+    - bullet: Migrated Bethel’s vendor managed Salesforce org into an in-house, vanilla Salesforce org.
+      sub-bullets:
+        - bullet: This 9-month project involved coordination with our data team, along with business management teams, to move millions of records, automations, permissions and more into a brand new org.
 
 # App Specialist
 - company: Bethel University

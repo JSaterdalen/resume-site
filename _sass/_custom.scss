@@ -1,3 +1,4 @@
+// ::: GENERAL STYLE :::
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -36,10 +37,12 @@ h1 {
 
 h2 {
   font-size: 2.074rem;
+  font-weight: var(--font-weight--bold);
 }
 
 h3 {
   font-size: 1.728rem;
+  // font-weight: var(--font-weight--bold);
 }
 
 h4 {
@@ -66,14 +69,10 @@ li:first-of-type {
 li {
   margin-bottom: 0.5rem;
 }
+// ---- END GENERAL STYLE ----
 
-// Layout
-// .main {
-
-// }
-
-// Header
-header {
+// ::: MAIN HEADER :::
+.main > header {
   text-align: center;
   margin-bottom: 2rem;
 
@@ -124,6 +123,7 @@ header {
   //     }
   // }
 }
+// ---- end MAIN HEADER ----
 
 // ::: CONTENT SECTION :::
 .content-section {
@@ -133,18 +133,10 @@ header {
     margin-bottom: var(--spacing);
     // border-bottom: 0.5px solid $light-gray;
     text-align: left;
-
-    h2 {
-      font-weight: var(--font-weight--bold);
-    }
   }
 
   .resume-item {
     margin-bottom: var(--spacing);
-  }
-
-  h3 {
-    font-weight: var(--font-weight--bold);
   }
 
   h5 {
@@ -157,10 +149,15 @@ header {
     // line-height: 1.5rem;
   }
 
+  .resume-skills > li {
+    display: inline;
+  }
+
   ::marker {
     color: $gray;
   }
 }
+// ---- end CONTENT SECTION ----
 
 // ::: SOCIAL ICONS :::
 .icon-links {
@@ -189,68 +186,4 @@ header {
   //   }
   // }
 }
-
-// Social Media
-// .icon-links {
-//   margin: var(--spacing--small) 0;
-//   list-style: none;
-//   position: relative;
-//   text-align: center;
-
-//   .icon-link-item {
-//     display: inline-block;
-//     margin-left: 5px;
-//   }
-
-//   .icon-link { display: inline-block;
-
-//     &:hover .icon path {
-//       fill: $gray;
-//       transition: all .2s ease;
-//     }
-//   }
-
-//   .icon {
-//     height: 28px;
-//   }
-// }
-
-// Page Header
-// .page-header {
-//     padding: 1.5rem 0;
-//     text-align: center;
-
-//     .avatar {
-//         width: 100px;
-//         display: block;
-//         margin: 0 auto;
-//         border-radius: 95px;
-//     }
-
-//     h2 {
-//         font-weight: 300;
-//         font-size: 1.5rem;
-//     }
-
-//     a.contact-button {
-//         display: block;
-//         text-decoration: none;
-//         color: $gray;
-//         background-color: $light-gray;
-//         line-height: 3em;
-//         width: 10em;
-//         border-radius: 5px;
-//         margin: var(--spacing) auto;
-//         transition: all 0.3s;
-
-//         &:hover {
-//             color: $white;
-//             background-color: $gray;
-//             transition: all 0.3s;
-//         }
-//     }
-
-//     .executive-summary {
-//         padding-top: .25em;
-//     }
-// }
+// ---- end FOOTER STYLE ----

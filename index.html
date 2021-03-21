@@ -37,11 +37,9 @@ layout: resume
     </header>
 
     {% if site.resume_section_experience %}
-    <!-- begin Experience -->
+    <!-- ::: EXPERIENCE ::: -->
     <section class="content-section">
-      <header class="section-header">
-        <h2>Experience</h2>
-      </header>
+      <h2>Experience</h2>
 
       {% for job in site.data.experience %}
         <div
@@ -55,27 +53,40 @@ layout: resume
           {{ job.company }}
         </h4>
         <h5 class="resume-item-details">{{ job.duration }}</h5>
-        <!-- <p class="resume-item-copy">{{ job.summary }}</p> -->
         <p>
-          <!-- <ul class="resume-item-list"> -->
+          <!-- SUMMARY BULLET POINTS -->
           {% for summary in job.summaries %}
             {% if forloop.first %}<ul class="resume-item-list">{% endif %}
             <li>{{ summary.bullet }}</li>
             {% if forloop.last %}</ul>{% endif %}
           {% endfor %}
+          <!-- ACCOMPLISHMENT BULLET POINTS, IF ANY -->
+          <!-- these FOR loops and nested lists got really gross...but it works -->
+          {% for acc in job.accomplishments %}
+            {% if forloop.first %}
+            <span>Key accomplishments:</span>
+            <ul class="resume-item-list">{% endif %}
+              <li>{{ acc.bullet }}
+                {% for sub in acc.sub-bullets %}
+                  {% if forloop.first %}
+                  <ul class="resume-item-list">{% endif %}
+                    <li>{{sub.bullet}}</li>
+                  {% if forloop.last %}</ul>{% endif %}
+                {% endfor %}
+              </li>
+            {% if forloop.last %}</ul>{% endif %}
+          {% endfor %}
         </p>
       </div>
-      <!-- end of resume-item -->
       {% endfor %}
     </section>
-    <!-- end Experience -->
-    {% endif %} {% if site.resume_section_education %}
-
-    <!-- begin Education -->
+    <!-- ::: END EXPERIENCE ::: -->
+    {% endif %} 
+    
+    {% if site.resume_section_education %}
+    <!-- ::: EDUCATION ::: -->
     <section class="content-section">
-      <header class="section-header">
-        <h2>Education</h2>
-      </header>
+      <h2>Education</h2>
 
       {% for education in site.data.education %}
       <div
@@ -99,31 +110,77 @@ layout: resume
       </div>
       {% endfor %}
     </section>
-    <!-- end Education -->
+    <!-- ::: END EDUCATION ::: -->
     {% endif %}
   </div>
 </div>
 
 {% if site.resume_section_skills %}
-<!-- begin Skills -->
+<!-- ::: SKILLS ::: -->
 <section class="content-section">
-  <header class="section-header">
-    <h2>Skills</h2>
-  </header>
-  {% for skill in site.data.skills %}
+  <h2>Skills</h2>
+
   <div class="resume-item">
-    <h4 class="resume-item-details">{{ skill.skill }}</h4>
-    <p class="resume-item-copy">{{ skill.description }}</p>
+    <ul class="resume-item-list resume-skills">
+    {% comment %} add Skills to skills.yml {% endcomment %}
+      {% for skill in site.data.skills %}
+        <li class="resume-item-details">
+          {% if forloop.first %}
+            {{ skill }} 
+          {% else %}
+             &bull; {{ skill }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+</section>
+<!-- ::: END SKILLS ::: -->
+{% endif %}
+
+{% if site.resume_section_projects %}
+<!-- ::: PROJECTS ::: -->
+<section class="content-section">
+  <h2>Projects</h2>
+
+  {% for project in site.data.projects %}
+  <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta
+      itemprop="creator"
+      content="{{ site.resume_name }}"
+      itemtype="http://schema.org/Person"
+    />
+    <h3 class="resume-item-title" itemprop="name">
+      {% if project.url %}<a href="{{ project.url }}" itemprop="url"
+        >{{ project.project }}</a
+      >{% else %}{{ project.project }}{% endif %}
+    </h3>
+    <h4 class="resume-item-details" itemprop="description">
+      {{ project.role }} &bull; {{ project.duration }}
+    </h4>
+    <p class="resume-item-copy">{{ project.description }}</p>
   </div>
   {% endfor %}
 </section>
-<!-- end Skills -->
+<!-- ::: END PROJECTS ::: -->
+{% endif %} 
+
+{% if site.resume_section_recognition %}
+<!-- ::: RECOGNITION ::: -->
+<section class="content-section">
+  <h2>Recognition</h2>
+
+  {% for recognition in site.data.recognitions %}
+  <div class="resume-item">
+    <h3 class="resume-item-title" itemprop="award">{{ recognition.award }}</h3>
+    <h4 class="resume-item-details">
+      {{ recognition.organization }} &bull; {{ recognition.year }}
+    </h4>
+    <p class="resume-item-copy">{{ recognition.summary }}</p>
+  </div>
+  {% endfor %}
+</section>
+<!-- end Recognition -->
 {% endif %}
 
-<footer class="page-footer">
-  <!-- <p class="footer-line">
-    Made by <a href="http://twitter.com/jsaterdalen">@jsaterdalen</a>.
-  </p> -->
-  <!-- <p class="footer-line">
-  </p> -->
-</footer>

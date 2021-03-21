@@ -2,9 +2,6 @@
   "folders": [
     {
       "path": "."
-    },
-    {
-      "path": "../../../03 - Resources/Web/Templates/jekyll/resume-template"
     }
   ],
   "settings": {
