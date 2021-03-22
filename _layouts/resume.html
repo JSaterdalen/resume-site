@@ -1,13 +1,20 @@
 {% include head.html %}
 
   <body>
-    
-    {{ content }}
+    <div class="main__wrapper">
+      <div class="main">
+
+        {{ content }}
+        
+        {% include footer.html %}
+
+      </div>
+    </div> <!-- main__wrapper DIV -->
     
     <script src="{{ "/assets/js/vendor/modernizr-3.11.2.min.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/plugins.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  </body>
 
-{% include footer.html %}
+  </body>
+</html>

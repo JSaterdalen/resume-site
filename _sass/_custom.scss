@@ -2,16 +2,24 @@
 html {
   font-size: 16px;
   box-sizing: border-box;
+  background-color: none;
 }
 
 body {
-  color: $gray;
-  padding: 3rem 1.5rem;
+  // color: $gray;
+  // padding: 3rem 1.5rem;
+  font-size: 16px;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 .main__wrapper {
   max-width: 720px;
-  margin: auto;
+  margin: 0 auto;
+  min-height: 100%;
+  color: $gray;
+  padding: 3rem 1.5rem;
+  overflow: hidden;
 }
 
 // ::: TYPOGRAPHY :::
@@ -24,7 +32,6 @@ h2,
 h3,
 h4,
 h5 {
-  // margin: 1rem 0 1rem;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -42,7 +49,6 @@ h2 {
 
 h3 {
   font-size: 1.728rem;
-  // font-weight: var(--font-weight--bold);
 }
 
 h4 {
@@ -79,7 +85,6 @@ li {
   .avatar {
     width: 95px;
     border-radius: 50%;
-    // margin: var(--spacing);
   }
 
   .header-summary {
@@ -95,7 +100,6 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    // margin-top: var(--spacing);
   }
 
   h3 {
@@ -119,14 +123,6 @@ li {
       transition: all 0.1s;
     }
   }
-
-  // @media only screen and (min-width: 725px) {
-  //     .header-title-bar {
-  //         display: grid;
-  //         grid-template-columns: 1fr 1fr;
-  //         justify-items: flex-end;
-  //     }
-  // }
 }
 // ---- end MAIN HEADER ----
 
@@ -136,7 +132,6 @@ li {
 
   header {
     margin-bottom: var(--spacing);
-    // border-bottom: 0.5px solid $light-gray;
     text-align: left;
   }
 
@@ -151,7 +146,6 @@ li {
   .resume-item-list {
     list-style-type: disc;
     padding-left: 1.5rem;
-    // line-height: 1.5rem;
   }
 
   .resume-skills {
@@ -189,7 +183,7 @@ li {
 
 // ::: FOOTER STYLE :::
 .page-footer {
-  // border-top: 2px solid $light-gray;
+  border-top: 2px solid $light-gray;
   padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
