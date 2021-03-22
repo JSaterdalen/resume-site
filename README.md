@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6abfeaff-1d02-4f0c-bf43-e4ca454e0917/deploy-status)](https://app.netlify.com/sites/tender-hopper-218485/deploys)
+
 # Resume Site
 
 This is pretty overkill for such a simple site, but it was a fun way for me to learn [Jekyll](https://jekyllrb.com/) and brush up on my CSS. This also let me create a fresh baseline project for future sites to build off of.
