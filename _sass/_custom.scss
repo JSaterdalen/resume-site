@@ -25,6 +25,18 @@ body {
 // ::: TYPOGRAPHY :::
 p {
   margin-bottom: 1rem;
+
+  a {
+    &:hover {
+      color: $light-orange;
+      text-decoration: none;
+      border-bottom: 1px solid $gray;
+      transition: all 0.1s;
+    }
+
+    text-decoration: none;
+    border-bottom: 1px solid $light-orange;
+  }
 }
 
 h1,
@@ -117,9 +129,11 @@ li {
     margin: var(--spacing) auto;
     transition: all 0.1s;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       color: $white;
-      background-color: $blue;
+      background-color: $light-orange;
       transition: all 0.1s;
     }
   }
@@ -174,8 +188,10 @@ li {
     font-size: 28px;
     color: $gray;
 
-    &:hover {
-      color: $blue;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $light-orange;
       transition: all 0.1s;
     }
   }
@@ -187,17 +203,6 @@ li {
   padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
-
-  // .footer-line {
-  //   margin: 0;
-  //   font-size: 0.875rem;
-  //   color: #999;
-
-  //   > a {
-  //     font-weight: 700;
-  //     color: #333;
-  //   }
-  // }
 }
 // ---- end FOOTER STYLE ----
 
