@@ -1,7 +1,7 @@
 # site settings
 url: 'https://saterdalen.me' # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: '' # the subpath of your site, e.g. /blog
-title: 'Josh Saterdalen | Resume' # the name of your site, e.g. ACME Corp.
+title: 'Josh Saterdalen' # the name of your site, e.g. ACME Corp.
 
 # Build settings
 markdown: kramdown
