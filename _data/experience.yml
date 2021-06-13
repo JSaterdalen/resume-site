@@ -1,8 +1,14 @@
 # Jobs
+
+# Demand Chain
+- company: Demand Chain
+  position: Salesforce Consultant
+  duration: June 2021 &ndash; Present
+
 # Salesforce Administrator
 - company: Bethel University
   position: Salesforce Administrator
-  duration: April 2018 &ndash; Present
+  duration: April 2018 &ndash; May 2021
   summaries:
     - bullet: Problem-solve complex business needs and adapt them into usable Salesforce enhancements.
     - bullet: Architect object data structure for efficiency and long-term growth.
