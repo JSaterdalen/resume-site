@@ -44,11 +44,12 @@ resume_section_skills: true
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url: 'https://github.com/jsaterdalen'
-  # resume_twitter_url:           "http://twitter.com/jsaterdalen"
+  resume_github_url:     'https://github.com/jsaterdalen'
+  resume_twitter_url:    'http://twitter.com/jsaterdalen'
+  resume_mastodon_url:   'https://social.lol/@joshs'
   # resume_dribbble_url:          "https://dribbble.com/jag"
   # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url: 'https://www.linkedin.com/in/jsaterdalen'
+  resume_linkedin_url:   'https://www.linkedin.com/in/jsaterdalen'
   # resume_instagram_url:         "insert your Instagram URL here"
   # resume_website_url:           "site url"
   # resume_medium_url:            "https://medium.com/@"

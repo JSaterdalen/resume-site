@@ -25,7 +25,17 @@
       ><ion-icon name="logo-twitter"></ion-icon
     ></a>
   </li>
-  {% endif %} {% if site.resume_social_links.resume_medium_url %}
+  {% endif %} {% if site.resume_social_links.resume_mastodon_url %}
+  <!-- Mastodon link -->
+  <li class="icon-link-item">
+    <a
+      rel="me"
+      href="{{ site.resume_social_links.resume_mastodon_url }}"
+      class="icon-link"
+      ><ion-icon name="logo-mastodon"></ion-icon
+    ></a>
+  </li>
+  {% endif %}{% if site.resume_social_links.resume_medium_url %}
   <!-- Medium link -->
   <li class="icon-link-item">
     <a href="{{ site.resume_social_links.resume_medium_url }}" class="icon-link"
